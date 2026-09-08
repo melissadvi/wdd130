@@ -9,6 +9,10 @@ nav a {
     padding: 20px;
 }
 
+main {
+    max-width: 10px 20px;
+}
+
 h1 {
     color: darkblue;
 }
