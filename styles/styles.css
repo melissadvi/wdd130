@@ -14,7 +14,7 @@ h1 {
 }
 
 main img {
-    width: 150px;
+    max-width: 150px;
     height: auto;
     border: 1px solid black;
     padding: 2px;
@@ -25,7 +25,7 @@ h2 {
     color: darkblue;
 }
 
-aside {
+aside img {
     width: 200px;
     height: auto;
     margin: 10px;
