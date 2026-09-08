@@ -17,7 +17,7 @@ h1 {
     color: darkblue;
 }
 
-img {
+main img {
     max-width: 150px;
     height: auto;
     border: 1px solid black;
@@ -29,6 +29,11 @@ h2 {
     color: darkblue;
 }
 
+aside img {
+    width: 200px;
+    height: auto;
+}
+
 aside {
     width: 10px 20px;
     margin: 10px;
@@ -37,11 +42,6 @@ aside {
     background-color: #eee;
     color: #333;
     text-align: center;
-}
-
-aside img {
-    width: 200px;
-    height: auto;
 }
 
 p {
