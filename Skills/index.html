@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laris World</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="toast" class="toast hidden">
+        <span class="sparkle">✨</span>
+        <p id="toast-message"></p>
+    </div>
+    <header class="jedi-header">
+        <div class="skywalker-container">
+             <span class="chrome-star">✦</span>
+        </div>
+        <h1 class="y2k-title">Welcome to Laris World</h1>
+        <p class="y2k-subtitle">O lugar mais incrível da galáxia! 🌌</p>
+    </header>
+    <main class="container">
+        <section class="bio-card">
+            <div class="bio-photo-wrapper">
+                <img src="images/profilelaris.jpeg" alt="Lari em primeiro plano, sorrindo para a câmera com expressão confiante e alegre. Ela está em um ambiente de estudo ou de destaque pessoal, com luz suave e fundo discreto. A imagem transmite energia positiva e foco em sua jornada como futura médica." class="bio-photo">
+                <span class="bio-badge">Futura Médica</span>
+            </div>
+            <div class="bio-info">
+                <h2>Doutora em Construção 🩺✨</h2>
+                <p class="bio-text">Doutora Lari a caminho para salvar o dia! Vai ser a melhor médica de todas!!</p>
+                <ul class="bio-stats">
+                    <li><strong>Status:</strong> Futura Médica & Mestre jedi  🌌 </li>
+                    <li><strong>Combustível:</strong> Monster White Zero Açúcar 🥤</li>
+                    <li><strong>Mãe de pet:</strong> Théo 🐱</li>
+                </ul>
+            </div>
+        </section>
+        <button id="btn-socorro" class="btn-socorro" title="Clique aqui para receber motivação!">
+            🥹
+            <span class="btn-tag">Preciso de Ajuda!</span>
+        </button>
+        <div id="modal-motivacao" class="modal-motivacao hidden">
+            <div class="modal-content">
+                <button id="close-modal" class="close-modal">&times;</button>
+                <div class="modal-header">
+                    <span class="modal-star">✨</span>
+                    <h3>Mensagem das Mas Mas</h3>
+                </div>
+                <div class="modal-body">
+                    <div id="modal-message-text"></div>
+                </div>
+                <button id="btn-outra-mensagem" class="btn-y2k">Ver outra mensagem</button>
+            </div>
+        </div>
+        <section class="nerd-card">
+            <div class="card-header">
+                <span class="chrome-star">✦</span>
+                <h2>Central Mediciner & Nerd Zone 🩺⚔️</h2>
+            </div>
+            <div class="med-block">
+                <h3>focus mode: medicina </h3>
+                <p>timer pomodoro para manter o foco nos estudos! </p>
+            </div>
+            <div class="pomodoro-box">
+                <span id="timer-display" class="timer">25:00</span> 
+                <div class="timer-controls">
+                    <button id="btn-start-timer" class="btn-y2k-sm">start ⏱️</button>
+                    <button id="btn-add-5min" class="btn-y2k-sm"> 5min ♱ </button>
+                    <button id="btn-less-5min" class="btn-y2k-sm"> 5min ⚡</button>
+                    <button id="btn-reset-timer" class="btn-y2k-sm">reset 🔄</button>
+                </div>
+            </div>
+            <hr class="divider-y2k">
+            <div class="nerd-grid">
+                <div class="nerd-item starwars">
+                    <h4>StarWars 🌌</h4>
+                    <p><em>"Que a força esteja com você minha jovem padawan." - Obiwan</em></p>
+                    <span class="jedi-tag">May the Force be with you</span>
+                </div>
+                <div class="nerd-item apotecaria">
+                    <h4>Diário de uma Apotecária🍃</h4>
+                    <p>Anotações da Maomao (Laris) & Fórmulas Medicionais 🧪</p>
+                    <a href="https://app.notion.com/p/estudos-3d8e70b293ac806d96f9da02682ff229" target="_blank" rel="noopener noreferrer" class="jedi-tag notion-btn">
+                        Acessar Notion 🩻
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="books-card">
+            <div class="card-header">
+                <span class="chrome-star">✦</span>
+                <h2>Skoob & Leitura 📚✨</h2>
+            </div>
+            <div class="med-block">
+                <p>Aqui você pode acompanhar suas leituras e resenhas:</p>
+                <a href="https://www.skoob.com.br" target="_blank" class="btn-skoob">
+                    @imreadding 📖
+                </a>
+            </div>
+            
+            <p class="section-desc">Favoritos do momento:</p>
+                <div id="books-grid" class="books-grid"></div>
+
+                <div class="add-item-box vertical-box">
+                    <input type="text" id="input-fav-book-title" placeholder="Título do livro..." class="input-y2k">
+                    <input type="file" id="input-fav-book-file" accept="image/*" class="input-y2k">
+                    <select id="select-fav-book-stars" class="input-y2k">
+                        <option value="★★★★★">★★★★★ (5/5)</option>
+                        <option value="★★★★☆">★★★★☆ (4/5)</option>
+                        <option value="★★★☆☆">★★★☆☆ (3/5)</option>
+                        <option value="★★☆☆☆">★★☆☆☆ (2/5)</option>
+                        <option value="★☆☆☆☆">★☆☆☆☆ (1/5)</option>
+                    </select>
+                    <button id="btn-add-fav-book" class="btn-y2k">+ Adicionar Livro</button>
+                </div>
+
+                <hr class="divider-y2k">
+
+                <p class="section-desc">Estante de Leitura 📚:</p>
+                <div id="user-books-grid" class="books-grid"></div>
+
+                <div class="add-item-box vertical-box margin-top-10">
+                    <input type="text" id="input-book-title" placeholder="Nome do livro 📕..." class="input-y2k">
+                    <input type="text" id="input-book-author" placeholder="Nome do autor(a) 👤..." class="input-y2k">
+                    <input type="url" id="input-book-cover" placeholder="Link da imagem da capa 🧸 (URL)..." class="input-y2k">
+                    <input type="url" id="input-book-shop" placeholder="Link para comprar 🛒 (opcional)..." class="input-y2k">
+                    <input type="url" id="input-book-pdf" placeholder="Link do PDF 🗂️ (opcional)..." class="input-y2k">
+                    <button type="button" id="btn-add-book" class="btn-y2k"> + Adicionar Livro 📚</button>
+                </fdiv>
+        </section>
+        <section class="fit-care-card">
+            <div class="card-header">
+                <span class="chrome-star">✦</span>
+                <h2>Self Care 🫧 & Fitness Club 💪🏼</h2>
+            </div>
+            <div class="fit-care-grid">
+                <div class="fit-care-item">
+                    <h4>Rotina Rata de Academia 🐭</h4>
+                    <p class="section-desc">Checklist dos treinos: </p>
+                    <ul id="list-fitness" class="checklist-y2k"></ul>
+                        <div class="add-item-box">
+                            <input type="text" id="input-fitness" placeholder="Nova meta..." class="input-y2k">
+                            <button id="btn-add-fitness" class="btn-y2k-sm">+</button>
+                        </div>
+                </div>
+                <div class="fit-care-item">
+                    <h4>Bancada de Skicare 🧴</h4>
+                    <p class="section-desc">Glow up matinal/noturno: </p>
+                    <ul id="list-skincare" class="checklist-y2k"></ul>
+                        <div class="add-item-box">
+                            <input type="text" id="input-skincare" placeholder="Nova meta..." class="input-y2k">
+                            <button id="btn-add-skincare" class="btn-y2k-sm">+</button>
+                        </div>
+                </div>
+            </div>
+        </section>
+        <section class="car-y2k photo-mural-card">
+            <div class="car-header">
+                    <span class="chrome-star">✦</span>
+                    <h2> ୧⍤⃝📷 mural de memórias.ᐟ</h2>
+            </div>
+            <p class="section-desc">moments registred!🖼️ </p>
+            <div class="photo-mural-grid">
+                <div class="photo-frame">
+                    <img src="images/mural1.jpg" alt="Freddiezinha" >
+                    <span class="photo-caption">Freddiezinha 🐱</span>
+                </div>
+                <div class="photo-frame">
+                    <img src="images/mural2.PNG" alt="Theozinha">
+                    <span class="photo-caption">Theozinha 🐱</span>
+                </div>
+                <div class="photo-frame">
+                    <img src="images/mural3.jpeg" alt="Puppinha">
+                    <span class="photo-caption">Pupinha 🐱</span>
+                </div>
+            </div>
+            <div id="user-mural-grid" class="user-mural-grid">
+            </div>
+            <div class="add-item-box vertical-box margin-top-10">
+                <input type="file" id="input-mural-file" accept="image/*" class="input-y2k-file">
+                <input type="text" id="input-mural-caption" placeholder="Legenda da foto (opcional)..." class="input-y2k">
+                <button id="btn-add-mural-photo" class="btn-y2k"> + Adicionar Foto</button>
+            </div>
+            <div class="card-y2k letterbox-card">
+                <div class="card-header">
+                    <span class="chrome-star">✦</span>
+                    <h2>Letterboxd Club 🍿</h2>
+                </div>
+                <div class="media-info-box">
+                    <p>Aqui você pode acompanhar seus filmes e resenhas: </p>
+                    <a href="https://boxd.it/7bu6J" target="_blank" class="btn-profile-link">
+                        <span>Laris-Letterboxd ↗</span>
+                    </a>
+                </div>
+                <p class="section-desc">Favoritos do momento:</p>
+                <div id="movies-grid" class="movies-grid"></div>
+                 <div class="add-item-box vertical-box">
+                    <input type="text" id="input-movie-title" placeholder="Nome do filme/série..." class="input-y2k">
+                    <input type="file" id="input-movie-file" accept="image/*" class="input-y2k">
+                    <select id="select-movie-stars" class="input-y2k">
+                        <option value="★★★★★">★★★★★ (5/5)</option>
+                        <option value="★★★★☆">★★★★☆ (4/5)</option>
+                        <option value="★★★☆☆">★★★☆☆ (3/5)</option>
+                        <option value="★★☆☆☆">★★☆☆☆ (2/5)</option>
+                        <option value="★☆☆☆☆">★☆☆☆☆ (1/5)</option>
+                    </select>
+                    <button id="btn-add-movie" class="btn-y2k">+ Adicionar Filme</button>
+                    </div>
+                </div>
+        </section>
+        <div class="spotify-floating">
+            <div id="spotify-handle" class="spotify-drag-handle">
+                <span>🎵</span>
+            </div>
+            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/4krhvkhtN7OmMIlKPCprkm?utm_source=generator&si=f02ae87e50324a14" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+        <section class="card-y2k area-crente-card">
+            <div class="card-header">
+                <span class="chrome-star">✦</span>
+                <h2>Devocional / Missão Metas ✨</h2>
+            </div>
+            <div class="media-info-box devocional-box">
+                <div class="ver-header-row">
+                    <p class="verse-title"><strong> Versículo Favorito 📖 </strong></p>
+                </div>
+                <div id="verse-display-container">
+                    <blockquote id="daily-verse">
+                        "E aconteceu que eu, Néfi, disse a meu pai: Eu irei e cumprirei as ordens do Senhor, 
+                        porque sei que o Senhor nunca dá ordens aos filhos dos homens sem antes preparar um caminho pelo qual suas ordens possam ser cumpridas."
+                    </blockquote>
+                    <span id="verse-ref-display" class="verse-ref">— 1 Néfi 3:7 </span>
+                    <button id="btn-edit-verse" class="btn-icon-y2k" title="Editar versículo">✏️ Editar</button>
+                </div>
+                <div id="verse-edit-container" class="add-item-box vertical-box" style="display: none; margin-top: 10px;">
+                    <textarea id="input-verse-text" placeholder="Digite seu versículo favorito..." class="input-y2k" rows="3"></textarea>
+                    <input type="text" id="input-verse-ref" placeholder="Ex: Salmos 119:105 ou João 3:16" class="input-y2k">
+                    <button id="btn-save-verse" class="btn-y2k">💾 Salvar Versículo</button>
+                </div> 
+            </div>
+            <div class="faith-grid">
+                <div class="faith-subcard">
+                <h3>Hábitos Diários 🤍</h3>
+                <ul id="faith-habits-list" class="checklist-y2k">
+                    <li>
+                        <label for="habit-1">
+                            <input type="checkbox" id="habit-1">Ler o Livro de Mórmon 
+                        </label>
+                    </li>
+                    <li>
+                        <label for="habit-2">
+                            <input type="checkbox" id="habit-2">Analisar as lições do Pregar Meu Evangelho 
+                        </label>
+                    </li>
+                    <li>
+                        <label for="habit-3">
+                            <input type="checkbox" id="habit-3">
+                        </label>
+                    </li>
+                </ul>
+            </div>
+            <div class="faith-subcard">
+                <h3>Metas 🤍</h3>
+                <ul id="faith-goals-list" class="goals-list-y2k">
+                    
+                </ul>
+                <div class="add-item-box vertical-box">
+                    <input type="text" id="input-faith-goal" placeholder="Novo pedido ou meta..." class="input-y2k">
+                    <button id="btn-add-faith-goal" class="btn-y2k">+ Adicionar</button>
+                </div>
+            </div>
+            <div class="faith-resources-box">
+                <p class="section-desc">Recursos e Estudos:</p>
+                <div class="links-row">
+                    <a href="Livro de Mórmon https://www.churchofjesuschrist.org/study/scriptures/bofm?lang=por" target="_blank" class="btn-profile-link">
+                        Livro de Mórmon ↗
+                    </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
