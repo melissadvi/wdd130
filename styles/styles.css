@@ -1,3 +1,11 @@
+:root {
+    --heading-brackground-color: #eee;
+    --heading-text-color: #333;
+    --heading-font: 'Monsterrat', Hevetica, sans-serif;
+    --padding: 1rem;
+    --border: 1px solid rgb(0 0 0 / 0.1);
+}
+
 * {
     font-family: var(--heading-font);
 }
@@ -16,14 +24,6 @@ nav a {
 main {
     max-width: 800px;
     padding: 10px 20px;
-}
-
-:root {
-    --heading-brackground-color: #eee;
-    --heading-text-color: #333;
-    --heading-font: 'Monsterrat', Hevetica, sans-serif;
-    --padding: 1rem;
-    --border: 1px solid rgb(0 0 0 / 0.1);
 }
 
 h1 {
