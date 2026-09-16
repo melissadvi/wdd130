@@ -1,6 +1,5 @@
 :root {
    --primary-color: #fff;
-   --second-color: #0c3e23;
    --accent-color: #262626;
    --accent2-color: #2f95d1;
    --heading-font: "Monsterrat", "Hevetica", serif;
@@ -105,6 +104,7 @@ p {
 }
 
 .hero article img {
+    float: right;
     order: 2;
     width: 125px;
     flex-shrink: 0;
