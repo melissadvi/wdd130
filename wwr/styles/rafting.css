@@ -55,9 +55,14 @@ h2 {
    font-family: var(--heading-font);
 }
 
-nav, section, article {
+nav, article {
     margin: 16px;
     padding: 8px;
+}
+
+section {
+    margin: 16px 0;
+    padding: 0;
 }
 
 section p {
