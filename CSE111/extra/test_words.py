@@ -1,7 +1,7 @@
 """Verify that the prefix and suffix functions work correctly."""
 
 import pytest
-from words import prefix, suffix 
+from extra.words import prefix, suffix 
 
 
 def test_prefix():
