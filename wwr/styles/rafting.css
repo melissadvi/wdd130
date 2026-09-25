@@ -1,7 +1,7 @@
 :root {
     --primary-color: #fff;
     --accent-color: #262626;
-    --accent2-color: #2f95d1;
+    --accent2-color: #11608d;
     --heading-font: "Monsterrat", "Hevetica", serif;
     --body-font: Monsterrat, Helvetica, sans-serif;
 }
@@ -184,7 +184,7 @@ p {
     width: 100%;
     margin: 0;
     padding: 16px;
-    background-color: #262626;
+    background-color: var(--accent-color);
     color: var(--primary-color);
     display: flex;
     align-items: center;
