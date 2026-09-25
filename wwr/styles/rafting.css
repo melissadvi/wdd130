@@ -2,6 +2,7 @@
     --primary-color: #fff;
     --accent-color: #262626;
     --accent2-color: #11608d;
+    --accent3-color: #43baff;
     --heading-font: "Monsterrat", "Hevetica", serif;
     --body-font: Monsterrat, Helvetica, sans-serif;
 }
@@ -29,12 +30,11 @@ header img {
 
 body {
     font-family: var(--body-font);
-    color: var(--accent2-color);
+    color: var(--accent3-color);
 }
 
 header,
-main,
-footer {
+main {
     width: 840px;
     margin: 0 auto;
 }
@@ -112,6 +112,7 @@ h2 {
     margin-top: 5px;
     font-size: 0.9rem;
     font-weight: bolder;
+    color: var(--accent2-color);
 }
 
 nav ul {
@@ -190,6 +191,10 @@ p {
     align-items: center;
     justify-content: space-between;
     gap: 16px;
+}
+
+.hero article p {
+    color: var(--accent3-color);
 }
 
 .hero article img {
