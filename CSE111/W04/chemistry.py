@@ -1,4 +1,23 @@
 #Project Milestone | Author: Melissa A. Vieira
+# Enhancement: added a loop so the user can calculate the molar mass and
+# number of moles for multiple samples without restarting the program.
+
+from formula import (
+    parse_formula
+)
+
+def main():
+    continue_loop = "sim"
+    while continue_loop != "quit":
+        formula = input("Enter the molecular formula of the sample: ")
+        mass = float(input("Enter the mass in grams of the sample: "))
+        table = make_periodic_table()
+        symbol_quantity_list = parse_formula(formula, table)
+        molar_mass = compute_molar_mass(symbol_quantity_list, table)
+        number_of_moles = mass / molar_mass
+        print(f"{molar_mass} grams/mole")
+        print(f"{number_of_moles:.5f} moles")
+        continue_loop = input("Type 'quit' to exit, or press Enter to calculate another sample: ").lower()
 
 def make_periodic_table():
     periodic_table_dict = {
@@ -99,13 +118,18 @@ def make_periodic_table():
     }
     return periodic_table_dict
 
-def main():
-    table = make_periodic_table()
+def compute_molar_mass(symbol_quantity_list, perodic_table_dict):
+    total_mass = 0
+    SYMBOL_INDEX = 0
+    QUANTITY_INDEX = 1
 
-    for item in table.values():
-        name = item[0]
-        atomic_mass = item[1]
-        print(f"{name} {atomic_mass}")
+    for item in symbol_quantity_list:
+        symbol = item[SYMBOL_INDEX]
+        quantity = item[QUANTITY_INDEX]
+        element_data = perodic_table_dict[symbol]
+        atomic_mass = element_data[1]
+        total_mass = total_mass + (quantity * atomic_mass)
+    return total_mass
 
 if __name__ == "__main__":
     main()
