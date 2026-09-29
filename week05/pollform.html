@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form - User Poll</title>
+</head>
+
+<body>
+    <header>
+        <h1>WDD 130 | HTML Form - User Poll</h1>
+    </header>
+    <main>
+        <h2>Contact Information</h2>
+        <form>
+            <label>Full Name: <input type="text" name="fullname" required></label>
+            <label>Email: <input type="email" name="useremail" required></label>
+        </form>
+        <h2>Questions</h2>
+        <label for="browser">What is your favorite internet browser? </label>
+        <select id="browser" name="browser">
+            <option value="chrome">Chrome</option>
+            <option value="firefox">Firefox</option>
+            <option value="edge">Edge</option>
+            <option value="brave">Brave</option>
+            <option value="other">Other</option>
+        </select>
+        <label for="pet">Do you have a household pet? </label>
+        <input type="checkbox" id="pet" name="pet">
+        <label for="feedback">List the places you have lived: </label>
+        <textarea id="feedback" name="feedback" rows="4"
+          placeholder="Stillwater Florida, Amsterdam Netherlands,Timbuktu Mali"></textarea>
+        <button type="submit">Submit Poll</button>
+    </main>
+    <footer>
+        ©2026 | HTML Form - User Poll Activity | Melissa A. Vieira
+    </footer>
+</body>
+
+</html>
