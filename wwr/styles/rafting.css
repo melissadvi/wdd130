@@ -388,6 +388,10 @@ footer {
     margin-top: 16px;
 }
 
+.trip-intro {
+    margin: 16px 0;
+}
+
 .trips-intro p {
     max-width: 700px;
     margin: 0 auto;
