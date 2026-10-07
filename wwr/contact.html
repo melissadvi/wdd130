@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us | Rapids Rafting Adventure </title>
-    <meta name="description" content="Rapids Rafting offers unforgettable whitewater adventures with expert guides. Discover our story and get ready to make a splash!">
+    <meta name="description"
+      content="Rapids Rafting offers unforgettable whitewater adventures with expert guides. Discover our story and get ready to make a splash!">
     <meta name="author" content="Melissa A. Vieira">
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
+
 <body class="contact">
     <header>
         <img src="images/rapidsnewlogo.jpeg" alt="rapids tress">
@@ -20,86 +23,93 @@
             </ul>
         </nav>
     </header>
-        <main>
-            <h1>Contact Us</h1>
- 
-            <section class="company-info">
-                <h2>Rapids Rafting Company</h2>
-                <address>
-                    123 River Road<br>
-                    Boise, ID 83702
-                </address>
-                <p>Phone: <a href="tel:+12085550123">(208) 555-0123</a> | Toll-free: <a href="tel:+18005550123">(800) 555-0123</a></p>
-                <p>Email: <a href="mailto:inforapids@rafting.example">inforapids@rafting.example</a></p>
+    <main>
+        <h1>Contact Us</h1>
+
+        <section class="company-info">
+            <h2>Rapids Rafting Company</h2>
+            <address>
+                123 River Road<br>
+                Boise, ID 83702
+            </address>
+            <p>Phone: <a href="tel:+12085550123">(208) 555-0123</a> | Toll-free: <a
+                  href="tel:+18005550123">(800) 555-0123</a></p>
+            <p>Email: <a href="mailto:inforapids@rafting.example">inforapids@rafting.example</a></p>
+        </section>
+
+        <div class="contact-grid">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13832.271712095533!2d-51.18991535!3d-29.91994655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1790799883273!5m2!1spt-BR!2sbr"
+              width="400" height="530" allowfullscreen="" loading="lazy"
+              referrerpolicy="strict-origin-when-cross-origin"></iframe>
+
+            <section class="contact-form">
+                <h2>Send Us a Message</h2>
+                <form action="#" method="post" aria-label="Contact form">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required autocomplete="name">
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required autocomplete="email">
+
+                    <fieldset>
+                        <legend>Message purpose</legend>
+                        <label for="general"><input type="radio" id="general" name="purpose"
+                              value="general" checked> General Inquiry</label>
+                        <label for="reservation"><input type="radio" id="reservation" name="purpose"
+                              value="reservation"> Reservation Question</label>
+                        <label for="suggestion"><input type="radio" id="suggestion" name="purpose"
+                              value="suggestion"> Website Suggestion</label>
+                    </fieldset>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <div class="checkbox-row">
+                        <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+                        <label for="newsletter">Please subscribe me to the monthly
+                            newsletter</label>
+                    </div>
+
+                    <button type="submit">Get in Touch!</button>
+                </form>
             </section>
- 
-            <div class="contact-grid">
-                <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13832.271712095533!2d-51.18991535!3d-29.91994655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1790799883273!5m2!1spt-BR!2sbr" 
-                    width="400" 
-                    height="530" 
-                    allowfullscreen="" 
-                    loading="lazy" 
-                    referrerpolicy="strict-origin-when-cross-origin"></iframe>
- 
-                <section class="contact-form">
-                    <form action="#" method="post" aria-label="Contact form">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" required autocomplete="name">
- 
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required autocomplete="email">
- 
-                        <fieldset>
-                            <legend>Message purpose</legend>
-                            <label for="general"><input type="radio" id="general" name="purpose" value="general" checked> General Inquiry</label>
-                            <label for="reservation"><input type="radio" id="reservation" name="purpose" value="reservation"> Reservation Question</label>
-                            <label for="suggestion"><input type="radio" id="suggestion" name="purpose" value="suggestion"> Website Suggestion</label>
-                        </fieldset>
- 
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
- 
-                        <div class="checkbox-row">
-                            <input type="checkbox" id="newsletter" name="newsletter" value="yes">
-                            <label for="newsletter">Please subscribe me to the monthly newsletter</label>
-                        </div>
- 
-                        <button type="submit">Get in Touch!</button>
-                    </form>
-                </section>
+        </div>
+        <section class="team">
+            <h2>We Are Here to Serve You</h2>
+            <div class="team-grid">
+                <figure>
+                    <img src="images/guide1.jpg" alt="Portrait of Sam Rivers, head guide"
+                      width="200" height="200" loading="lazy">
+                    <figcaption>Sam Rivers<br>Head Guide</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/guide2.jpg" alt="Portrait of Maria Lopez, operations manager"
+                      width="200" height="200" loading="lazy">
+                    <figcaption>Maria Lopez<br>Operations Manager</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/guide3.jpg" alt="Portrait of Tom Baker, safety coordinator"
+                      width="200" height="200" loading="lazy">
+                    <figcaption>Tom Baker<br>Safety Coordinator</figcaption>
+                </figure>
             </div>
-            <section class="team">
-                <h2>We Are Here to Serve You</h2>
-                <div class="team-grid">
-                    <figure>
-                        <img src="images/guide1.jpg" alt="Portrait of Sam Rivers, head guide" width="200" height="200" loading="lazy">
-                        <figcaption>Sam Rivers<br>Head Guide</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="images/guide2.jpg" alt="Portrait of Maria Lopez, operations manager" width="200" height="200" loading="lazy">
-                        <figcaption>Maria Lopez<br>Operations Manager</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="images/guide3.jpg" alt="Portrait of Tom Baker, safety coordinator" width="200" height="200" loading="lazy">
-                        <figcaption>Tom Baker<br>Safety Coordinator</figcaption>
-                    </figure>
-                </div>
-            </section>
-        </main>
-        <footer>
-            <p>© 2026 🌊 Rapids Rafting 🚣 Melissa A. Vieira </p>
-             <nav class="socialmedia">
-                <a href="https://facebook.com">
-                    <img src="images/facebook.svg" alt="rafting facebook">
-                </a>
-                <a href="https://instagram.com">
-                    <img src="images/instagram.svg" alt="rafting instagram">
-                </a>
-                <a href="https://whatsapp.com">
-                    <img src="images/whatsapp.svg" alt="rafting whatsapp">
-                </a>
-            </nav>
-        </footer>
+        </section>
+    </main>
+    <footer>
+        <p>© 2026 🌊 Rapids Rafting 🚣 Melissa A. Vieira </p>
+        <nav class="socialmedia">
+            <a href="https://facebook.com">
+                <img src="images/facebook.svg" alt="rafting facebook">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagram.svg" alt="rafting instagram">
+            </a>
+            <a href="https://whatsapp.com">
+                <img src="images/whatsapp.svg" alt="rafting whatsapp">
+            </a>
+        </nav>
+    </footer>
 </body>
+
 </html>

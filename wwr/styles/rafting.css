@@ -259,6 +259,12 @@ footer {
     border: 0;
 }
 
+.contact-form h2 {
+    background-color: var(--accent2-color);
+    opacity: 1;
+    color: #fff;
+}
+
 .contact-form form {
     display: flex;
     flex-direction: column;
