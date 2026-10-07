@@ -4,12 +4,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home </title>
-    <link ref="stylesheet" href="rafting.css">
+    <title>Rapids Rafting Adventure | Whitewater Trips</title>
+    <meta name="description"
+      content="Rapids Rafting offers guided whitewater trips for every level, from gentle family floats to big water expeditions. Explore our trips and sign up for our newsletter.">
+    <meta name="author" content="Melissa A. Vieira">
+    <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
-<body>
+<body class="home">
+    <header>
+        <img src="images/rapidsnewlogo.jpeg" alt="rapids tress">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <img src="images/home-hero.jpg"
+              alt="Several rafts floating down a calm river surrounded by green jungle" width="900"
+              height="299">
+            <h1>Welcome to Rapids Rafting</h1>
+        </section>
 
+        <section class="cta">
+            <h2>Your River Adventure Starts Here</h2>
+            <p>From gentle family floats to full-day big water expeditions, find the trip that fits
+                you.
+            </p>
+            <a class="cta-link" href="trips.html">Explore Our Trips</a>
+        </section>
+
+        <section class="home-grid">
+            <figure>
+                <img src="images/home-group.jpg"
+                  alt="Smiling group of rafters posing next to an orange raft on the river bank"
+                  width="600" height="400" loading="lazy">
+            </figure>
+            <article>
+                <h3>Adventure for Everyone</h3>
+                <p>Whether it is your first time on a raft or your fiftieth, our guides pick the
+                    right
+                    river for your group and keep every trip fun.</p>
+            </article>
+
+            <article>
+                <h3>Safety First</h3>
+                <p>Helmets, life jackets and a full safety talk come with every trip, so you can
+                    focus
+                    on the splash.</p>
+            </article>
+            <figure>
+                <img src="images/home-safety.jpg"
+                  alt="Colorful rafting helmets resting on an inflatable raft" width="600"
+                  height="400" loading="lazy">
+            </figure>
+
+            <figure>
+                <img src="images/home-action.jpg"
+                  alt="View from above of rafters paddling a yellow raft through white water"
+                  width="600" height="400" loading="lazy">
+            </figure>
+            <article>
+                <h3>Rapids for Every Level</h3>
+                <p>Choose calm Class I water or hold on tight in Class V rapids. Half-day and
+                    full-day
+                    trips are available all season.</p>
+            </article>
+        </section>
+
+        <section class="newsletter contact-form">
+            <h2>Join Our Newsletter</h2>
+            <p>Get trip news and seasonal offers in your inbox.</p>
+            <form action="#" method="post" aria-label="Newsletter sign up">
+                <label for="news-name">Name</label>
+                <input type="text" id="news-name" name="name" required autocomplete="name">
+
+                <label for="news-email">Email</label>
+                <input type="email" id="news-email" name="email" required autocomplete="email">
+
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>© 2026 🌊 Rapids Rafting 🚣 Melissa A. Vieira </p>
+        <nav class="socialmedia">
+            <a href="https://facebook.com">
+                <img src="images/facebook.svg" alt="rafting facebook">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagram.svg" alt="rafting instagram">
+            </a>
+            <a href="https://whatsapp.com">
+                <img src="images/whatsapp.svg" alt="rafting whatsapp">
+            </a>
+        </nav>
+    </footer>
 </body>
 
 </html>

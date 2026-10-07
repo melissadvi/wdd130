@@ -370,7 +370,8 @@ footer {
 }
 
 .trips h1,
-.trip-table h2 {
+.trip-table h2,
+.home h2 {
     opacity: 1;
     background-color: var(--accent2-color);
     color: var(--primary-color);
@@ -472,4 +473,69 @@ tbody tr:nth-child(even) {
 .cta-link:hover,
 .cta-link:focus {
     background-color: var(--accent-color);
+}
+
+.home h1 {
+    opacity: 0.9;
+    background-color: var(--accent2-color);
+    color: var(--primary-color);
+}
+
+.home .hero h1 {
+    top: 0;
+    left: 0;
+    width: 100%;
+    transform: none;
+}
+
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+    align-items: center;
+}
+
+.home-grid figure {
+    margin: 0;
+}
+
+.home-grid img {
+    display: block;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.home-grid article {
+    margin: 0;
+}
+
+.home-grid h3 {
+    display: inline-block;
+    margin: 0 16px 0.5rem;
+    padding: 0.4rem 0.8rem;
+    border: 2px solid var(--accent2-color);
+    border-radius: 4px;
+    color: var(--accent2-color);
+}
+
+.home-grid p {
+    text-align: left;
+}
+
+.newsletter {
+    text-align: center;
+}
+
+.newsletter form {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+@media (max-width: 700px) {
+    .home-grid {
+        grid-template-columns: 1fr;
+    }
 }
