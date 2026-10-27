@@ -1,4 +1,5 @@
-CSE 111 Proposal for a Student Chosen Program
+CSE 111 Proposal for a Student Chosen Program 
+Author: Melissa A. Vieira
 
     (This is a proposal. All proposals are written with our best
     knowledge at the beginning of a project. As we progress from the
@@ -9,18 +10,71 @@ CSE 111 Proposal for a Student Chosen Program
     answer each of the following questions to the best of your
     knowledge.)
 
-1. What is the title of your program?
+1. What is the title of your program? 
+   Kana Helper: A Japanese Romaji Converter and Kana Quiz.
 
 2. What real-world problem will your program address or help to solve?
+   My program will help people who want to learn Japanese. It is hard for
+   beginners because the Japanese writing system uses three scripts: hiragana,
+   katakana, and kanji. Before a student can read anything, they must first
+   memorize about 46 hiragana and 46 katakana characters, and they must also
+   learn special rules such as the small tsu (for doubled consonants), the
+   syllabic n, and combined sounds like "kya". Most beginners also have to
+   switch between a textbook, a keyboard layout tool, and a flashcard app just
+   to practice.
+
+   My program, Kana Helper, puts the two most useful beginner tools in one
+   terminal application. First, a converter turns romaji (Japanese written with
+   the Latin alphabet) into hiragana and katakana, so a student can type
+   "nihongo" (the romaji for "Japanese language") and see the correct kana,
+   including the special rules. Second, a quiz shows the student random kana
+   characters, checks their answers, calculates a score, and reports which
+   characters they missed most often so they know what to review. The kana
+   data is stored in a CSV file, so the program can be extended easily. The
+   program is meant to help me, and other beginners, practice reading kana in
+   a simple and organized way.
 
 3. What will you learn from developing this program?
+    - Write a program organized into many small functions that each perform
+    a single task.
+    - Read data from a CSV file and store it in a dictionary.
+    - Process text character by character and handle special cases (such as
+    doubled consonants and the syllabic n) with loops and conditionals.
+    - Work with Unicode text and use ord() and chr() to convert hiragana
+    to katakana.
+    - Use the random module to build a quiz.
+    - Handle errors with exceptions (for example, a missing file or invalid
+    user input).
+    - Write test functions and run them with pytest.
+    - Separate calculation functions (that take parameters and return values)
+    from functions that get user input and print results.
 
 4. What Python modules will your program use?
+   - csv (to read the kana table from a CSV file)
+   - random (to choose quiz characters randomly)
+   - pytest (to test the functions)
+   - json (to save and load the student's quiz results)
 
     (Some examples are: csv, datetime, functools, matplotlib, math,
     pandas, pytest, random, requests, and tkinter.)
 
 5. List the names of functions you will need?
+   1. main()
+   2. show_menu()
+   3. load_kana_table(filename)
+   4. romaji_to_hiragana(text, kana_table)
+   5. hiragana_to_katakana(text)
+   6. run_converter(kana_table)
+   7. run_quiz(kana_table)
+   8. pick_random_kana(kana_table)
+   9. check_answer(kana_char, answer, kana_table)
+   10. calculate_score(correct, total)
+   11. get_missed_kana(results)
+   12. show_results(correct, total, missed)
+   13. get_menu_choice(prompt, min_option, max_option)
+   14. save_results(filename, results)
+   15. load_results(filename)
+
 
     (Remember that the most reusable functions don't get user input and
     don't print results but instead have parameters and return a result.
@@ -34,4 +88,12 @@ CSE 111 Proposal for a Student Chosen Program
     to have parameters and return a result.)
 
 6. List the names of the test functions you will write.
-
+   1. test_load_kana_table()
+   2. test_romaji_to_hiragana()
+   3. test_hiragana_to_katakana()
+   4. test_pick_random_kana()
+   5. test_check_answer()
+   6. test_calculate_score()
+   7. test_get_missed_kana()
+   8. test_save_results()
+   9. test_load_results()

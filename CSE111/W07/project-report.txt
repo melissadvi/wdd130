@@ -1,0 +1,14 @@
+Student Project Report - Author Melissa A. Vieira
+
+=============Project Activity Log=================================Project Activity Log====================
+            Time Spent
+   Date       (hours)   Description of Work
+----------  ----------  -------------------------
+2026-10-01     1.5      Researched Japanese writing systems, designed project concept, and wrote the project proposal (proposal.txt).
+2026-10-03     2.0      Created the kana.csv data file and wrote the load_kana_table function along with its unit test.
+2026-10-06     2.5      Implemented romaji_to_hiragana and hiragana_to_katakana conversion functions and wrote comprehensive pytest functions.
+2026-10-08     2.0      Developed random quiz logic, answer validation, score calculation, and missed character tracking.
+2026-10-10     1.5      Added interactive terminal menu (show_menu and get_menu_choice) and JSON result persistence (save_results and load_results).
+2026-10-12     1.0      Integrated the complete main() loop, debugged edge cases, and verified 100% test success using pytest.
+=============Project Activity Log====================
+
